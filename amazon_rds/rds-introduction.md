@@ -37,7 +37,7 @@ Amazon RDS facilitates the deployment and maintenance of relational databases in
 - MariaSQL
 - Amazon Aurora (relational database provided by Amazon, only supports 2 engines: Aurora MySQL and Aurora PostgreSQL)
 
-![RDS engines](./assets/01.png "RDS Support Engines")
+![RDS engines](./asset/01.png "RDS Support Engines")
 
 ## How does Amazon RDS work?
 
@@ -47,19 +47,19 @@ Traditionally, these databases would require on-site servers that would need con
 
 ## Model Development
 
-![Model Development](./assets/02.png "Model Development")
+![Model Development](./asset/02.png "Model Development")
 
 ### Single DB instance
 
 Only creates one database instance, no backup versions. If an AZ problem occurs, the database cannot be accessed.
 
-![Single DB instance](./assets/04.png "Single DB instance")
+![Single DB instance](./asset/04.png "Single DB instance")
 
 ### Multi-AZ DB instance
 
 An instance copy will be created in another AZ (cannot be in the same zone as the main database, because when a problem occurs at the zone level, it cannot be covered). Provides high availability. Sync data from main database. This instance cannot be accessed.
 
-![Multi-AZ DB instance](./assets/05.png "Multi-AZ DB instance")
+![Multi-AZ DB instance](./asset/05.png "Multi-AZ DB instance")
 
 ### RDS Multi-AZ DB Cluster
 
@@ -69,7 +69,7 @@ Suitable for read > write applications
 
 Endpoints of 2 separate instances: When a problem occurs, you need to edit the endpoint connection
 
-![RDS Multi-AZ DB Cluster](./assets/03.png "RDS Multi-AZ DB Cluster")
+![RDS Multi-AZ DB Cluster](./asset/03.png "RDS Multi-AZ DB Cluster")
 
 ## RDS Proxy
 
@@ -79,4 +79,4 @@ Additional costs will be incurred for proxies.
 
 Currently supports 3 engines: MySQL, PostgreSQL, SQL Server.
 
-![RDS Proxy](./assets/06.png "RDS Proxy")
+![RDS Proxy](./asset/06.png "RDS Proxy")
